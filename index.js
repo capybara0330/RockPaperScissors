@@ -8,11 +8,11 @@ const choices = ["rock", "paper", "scissors"];
 
 function play(event){
     const userChoice = event.target.id;
-    message.innerHTML = "You selected" + userChoice + "!" + "<br/>";
+    message.innerHTML = "You selected " + userChoice + "!" + "<br/>";
 
     const randomNumber = Math.floor(Math.random() * choices.length);
     const computerChoice = choices[randomNumber];
-    message.innerHTML += "The computer chose" + computerChoice + "!";
+    message.innerHTML += "The computer chose " + computerChoice + "!";
 
     if (computerChoice === userChoice) {
         result.innerHTML = "Draw!";
